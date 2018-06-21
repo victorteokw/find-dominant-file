@@ -16,12 +16,16 @@
     "type": "git",
     "url": "git+https://github.com/zhangkaiyulw/find-dominant-file.git"
   },
+  "files": ["index.js"],
   "keywords": [
     "lookup",
     "findup",
     "directory",
     "root"
   ],
+  "engines": {
+    "node": ">= 4"
+  },
   "bugs": {
     "url": "https://github.com/zhangkaiyulw/find-dominant-file/issues"
   },
