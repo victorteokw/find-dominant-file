@@ -24,7 +24,7 @@
     "root"
   ],
   "engines": {
-    "node": ">= 4"
+    "node": ">= 6"
   },
   "bugs": {
     "url": "https://github.com/zhangkaiyulw/find-dominant-file/issues"
