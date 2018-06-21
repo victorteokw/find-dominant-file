@@ -4,8 +4,26 @@
   "description": "Utility for finding dominant file.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Zhang Kaiyu",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^23.1.0"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhangkaiyulw/find-dominant-file.git"
+  },
+  "keywords": [
+    "lookup",
+    "findup",
+    "directory",
+    "root"
+  ],
+  "bugs": {
+    "url": "https://github.com/zhangkaiyulw/find-dominant-file/issues"
+  },
+  "homepage": "https://github.com/zhangkaiyulw/find-dominant-file#readme"
 }
