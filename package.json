@@ -1,0 +1,11 @@
+{
+  "name": "find-dominant-file",
+  "version": "1.0.0",
+  "description": "Utility for finding dominant file.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
