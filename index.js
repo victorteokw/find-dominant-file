@@ -1,20 +1,31 @@
 const path = require('path');
 const fs = require('fs');
-const process = require('process');
 
-const isRootDirectory = (dir) => {
-  if (process.platform === 'win32') {
-    return /[a-zA-Z]:\\/.test(dir);
-  } else {
-	  return dir === '/';
+const findDominantFile = (dir, filenames, retDir = false) => {
+  if (!dir) {
+    throw new Error(`Base directory required. Received ${
+      JSON.stringify(dir)
+    }.`);
   }
-};
+  if (!filenames || !filenames.length) {
+    throw new Error(`Filename required. Received ${
+      JSON.stringify(filenames)
+    }.`);
+  }
 
-const findDominantFile = (dir, filename, retDir = false) => {
-  while (!isRootDirectory(dir)) {
-    const maybe = path.join(dir, filename);
-    if (fs.existsSync(maybe)) return retDir ? dir : maybe;
-    dir = path.dirname(dir);
+  dir = path.resolve(dir);
+  const { root } = path.parse(dir);
+
+  if (!Array.isArray(filenames)) {
+    filenames = [filenames];
+  }
+  for (const filename of filenames) {
+    let currentDir = dir;
+    while (currentDir !== root) {
+      const maybe = path.join(currentDir, filename);
+      if (fs.existsSync(maybe)) return retDir ? currentDir : maybe;
+      currentDir = path.dirname(currentDir);
+    }
   }
 };
 
