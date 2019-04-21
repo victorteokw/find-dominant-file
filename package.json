@@ -1,7 +1,7 @@
 {
   "name": "find-dominant-file",
   "version": "2.0.0",
-  "description": "Utility for finding dominant file.",
+  "description": "Return the filename or parent directory path of a file or directory by walking up parent directories.",
   "author": "Zhang Kai Yu (yeannylam@gmail.com)",
   "license": "MIT",
   "keywords": [
