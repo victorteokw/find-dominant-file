@@ -32,9 +32,9 @@ npm i find-dominant-file -s
 
 ``` js
 const myFile = findDominantFile('/foo/bar/baz/quxx/quxxx', 'quxx');
-               //=> '/foo/bar/baz'
+               //=> '/foo/bar/baz/quxx'
 const myDir = findDominantFile('/foo/bar/baz/quxx/quxxx', 'quxx', true);
-              //=> '/foo/bar'
+              //=> '/foo/bar/baz'
 ```
 
 ## API
