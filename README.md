@@ -9,7 +9,7 @@
 
 Return the filename or parent directory path of a file or directory by walking
 up parent directories. The package name is from emacs builtin lisp function
-`find-dominant-file`.
+`find-dominant-file`. This package supports TypeScript as well.
 
 ## Installation
 
