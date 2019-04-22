@@ -30,3 +30,4 @@ const findDominantFile = (dir, filenames, retDir = false) => {
 };
 
 module.exports = findDominantFile;
+module.exports.default = findDominantFile;
