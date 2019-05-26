@@ -1,6 +1,6 @@
 {
   "name": "find-dominant-file",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Return the filename or parent directory path of a file or directory by walking up parent directories.",
   "author": "Zhang Kai Yu (yeannylam@gmail.com)",
   "license": "MIT",
